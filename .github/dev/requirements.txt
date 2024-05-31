@@ -1,0 +1,10 @@
+pwntools
+requests
+colorama
+pyfiglet
+pycryptodome
+argparse
+name-that-hash
+python-nmap
+tabulate
+xmltodict
