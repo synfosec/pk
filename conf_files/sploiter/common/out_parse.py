@@ -1,4 +1,4 @@
-from colorama import Fore, Back, Style
+from colorama import Fore
 import re
 import os
 import json
@@ -44,7 +44,7 @@ usage : sploiter.py --help
                 self.data.append({"exploitdb" : predata})
             else:
                 print(f"|{Fore.RED}- No result in ExploitDB!{Fore.WHITE}")
-        except:
+        except Exception:
             print(f"|{Fore.RED}- Internal Error - No result in ExploitDB!{Fore.WHITE}")
 
     def exploitalert(self, content):
@@ -71,7 +71,7 @@ usage : sploiter.py --help
                 self.data.append({"exploitalert" : predata})
             else:
                 print(f"|{Fore.RED}- No result in ExploitAlert!{Fore.WHITE}")
-        except:
+        except Exception:
             print(f"|{Fore.RED}- Internal Error - No result in ExploitAlert!{Fore.WHITE}")
 
     def packetstormsecurity(self, content):
@@ -97,7 +97,7 @@ usage : sploiter.py --help
                 self.data.append({"packetstormsecurity" : predata})
             else:
                 print(f"|{Fore.RED}- No result in PacketStorm!{Fore.WHITE}")
-        except:
+        except Exception:
             print(f"|{Fore.RED}- Internal Error - No result in PacketStorm!{Fore.WHITE}")
 
 
@@ -127,7 +127,7 @@ usage : sploiter.py --help
                 self.data.append({"msfmodule" : predata})
             else:
                 print(f"|{Fore.RED}- No result in Metasploit Module!{Fore.WHITE}")
-        except:
+        except Exception:
             print(f"|{Fore.RED}- Internal Error - No result in Metasploit Module!{Fore.WHITE} ")
 
 
@@ -156,7 +156,7 @@ usage : sploiter.py --help
             else:
                 print("|")
                 print(f"|{Fore.RED}- No result in National Vulnearbility Database!{Fore.WHITE}")
-        except:
+        except Exception:
             print(f"|{Fore.RED}- Internal Error - No result in National Vulnearbility Database!{Fore.WHITE}")
             
 
@@ -218,6 +218,6 @@ usage : sploiter.py --help
     def genOutDir(self,locate):
         try:
             os.makedirs(locate, exist_ok=True)
-        except:
+        except Exception:
             pass
 

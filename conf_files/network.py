@@ -4,7 +4,6 @@ import os
 from datetime import datetime
 from colorama import Fore
 from colorama import Style
-from pprint import pprint
 
 class NetDiscover:
     def __init__(self, cidr: str) -> None:

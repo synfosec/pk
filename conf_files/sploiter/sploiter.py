@@ -7,9 +7,6 @@ from common.out_parse import Output
 from common.nmap_parse import NmapParse
 import argparse
 
-
-
-
 def main(args, keyword="", keyword_version=""):
     if keyword == None or args.nmap == None:
         pass
